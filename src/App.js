@@ -1,11 +1,12 @@
+import React from 'react';
+import Hero from './components/hero/hero';
 
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <React.Fragment>
+      <Hero/>
+    </React.Fragment>
   );
 }
 
