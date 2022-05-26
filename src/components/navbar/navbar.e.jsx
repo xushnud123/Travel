@@ -2,38 +2,69 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  padding-top: 40px;
-  /* padding: 0 61px; */
-  overflow: hidden;
+overflow: hidden;
 `;
 
 export const Row = styled.div`
   margin: 0 61px;
+  padding: 10px 0;
+  height: 50px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-   @media screen and (max-width: 930px) {
-       margin: 0 30px;
-   }
+  position: relative;
+  @media screen and (max-width: 930px) {
+    margin: 0 30px;
+  }
 `;
 
 export const Logo = styled.div`
   img {
     width: 235px;
     height: 60px;
-    @media screen and (max-width:1100px) {
-        width: 180px;
-        height: auto;
+    @media screen and (max-width: 1100px) {
+      width: 180px;
+      height: auto;
     }
-     @media screen and (max-width: 850px) {
-         width: 150px;
-     }
+    @media screen and (max-width: 850px) {
+      width: 150px;
+    }
+  }
+`;
+
+export const Logos = styled.div`
+  img {
+    display: none;
+    @media screen and (max-width: 750px) {
+      display: block;
+      margin-top: 40px;
+      width: 180px;
+      margin-bottom: 60px;
+    }
   }
 `;
 
 export const NavWrapper = styled.div`
-    
-`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+  @media screen and (max-width: 750px) {
+    position: fixed;
+    width: 340px;
+    height: 100%;
+    top: 0;
+    left: ${({ open }) => (open ? "0" : "-100%")};
+    transition: all ease-in-out 0.5s;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: ${({ open }) =>
+      open ? "0 8px 32px 0 rgba(31, 38, 135, 0.37)" : "0 0 0 0 transparent"};
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 0 10px 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+`;
 
 export const NavUl = styled.ul`
   display: flex;
@@ -70,6 +101,16 @@ export const NavUl = styled.ul`
       }
     }
   }
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    align-items: flex-start;
+    li {
+      margin-left: 0px !important;
+      &:not(:nth-child(1)) {
+        margin-top: 40px;
+      }
+    }
+  }
 `;
 
 export const Button = styled.button`
@@ -86,13 +127,13 @@ export const Button = styled.button`
   font-size: 20px;
   line-height: 23px;
   color: #ffffff;
-   @media screen and (max-width: 1100px) {
-       padding: 10px;
-       font-size: 18px;
-   }
-    @media screen and (max-width: 850px) {
-        font-size: 16px;
-    }
+  @media screen and (max-width: 1100px) {
+    padding: 10px;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 850px) {
+    font-size: 16px;
+  }
 `;
 
 export const Selects = styled.select`
@@ -118,13 +159,17 @@ export const Selects = styled.select`
 `;
 
 export const Toggle = styled.div`
-display: none;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
+  overflow: hidden;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: none;
   .btn {
-    width: 100%;
-    height: 100%;
+    width: 35px;
+    height: 35px;
     position: relative;
     display: flex;
     align-items: center;
@@ -136,7 +181,7 @@ display: none;
       background-color: #fff;
       border-radius: 2px;
       opacity: 1;
-      transition: all linear 0.3s;
+      transition: all linear 0.5s;
       &:nth-child(1) {
         transform: translateY(-10px);
         width: 25px;
@@ -166,4 +211,15 @@ display: none;
       }
     }
   }
+  @media screen and (max-width: 750px) {
+    display: block;
+  }
 `;
+
+
+export const Responsive = styled.div`
+width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
