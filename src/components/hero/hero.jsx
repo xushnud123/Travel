@@ -2,6 +2,7 @@ import React from "react";
 import { BacVideo, Wrapper } from "./hello.e";
 import bagVideo from "../../assets/video/video.mp4";
 import Navbar from "../navbar/navbar";
+import HeroCard from "../hero-card/hero-card";
 
 const Hero = () => {
   return (
@@ -11,9 +12,9 @@ const Hero = () => {
           <source src={bagVideo} type="video/mp4" />
         </video>
       </BacVideo>
-      <Navbar>
-      </Navbar>
-      
+      <Navbar/>
+      <HeroCard/>
+
     </Wrapper>
   );
 };

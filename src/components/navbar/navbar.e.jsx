@@ -50,6 +50,7 @@ export const NavWrapper = styled.div`
   transition: all ease-in-out 0.5s;
   @media screen and (max-width: 750px) {
     position: fixed;
+    z-index: 1;
     width: 340px;
     height: 100%;
     top: 0;
@@ -63,6 +64,7 @@ export const NavWrapper = styled.div`
     -webkit-backdrop-filter: blur(4.5px);
     border-radius: 0 10px 10px 0;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    
   }
   @media screen and (max-width:400px){
     width: 100%;
