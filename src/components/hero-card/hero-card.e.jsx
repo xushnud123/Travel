@@ -19,8 +19,9 @@ export const Row = styled.div`
 `;
 
 export const HeroTitle = styled.div`
-    
+  
 `
+
 export const Landscape = styled.div`
   display: flex;
   align-items: center;
@@ -49,7 +50,6 @@ export const Vacation = styled.div`
   margin-top: 20px;
   position: relative;
   .plane {
-    display: none;
     bottom: -150px;
     right: 100%;
     position: absolute;
@@ -90,36 +90,127 @@ export const Title = styled.h1`
       text-align: center; 
   }
 `;
-export const Description = styled.div``;
+export const Description = styled.div`
+  margin-top: 50px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  @media screen and (max-width: 650px) {
+    width: calc(100% - 4px);
+  }
+`;
 
 //react-slick
 
 export const ReactSlick = styled.div`
-  width: 560px;
+margin-top: 10px;
+  width: 600px;
+  position: relative;
   .slick-slider {
-    margin: 0 -35px;
-    height: 260px;
+    height: auto;
     .slick-list {
-        height: 100%;
-        .slick-slide {
-          margin-top: 15px;
-        margin-right: 15px;
-        margin-left: 15px;
-        width: 176px !important;
-        height: 230px !important;
-        background: rgba(255, 255, 255, 0.8);
-        border: 2px solid #ffffff;
-        /* shadow */
-
-        /* box-shadow: 64.0184px 76.8221px 80px rgba(0, 0, 0, 0.07),
-          41.4934px 49.7921px 46.8519px rgba(0, 0, 0, 0.0531481),
-          24.659px 29.5907px 25.4815px rgba(0, 0, 0, 0.0425185),
-          12.8037px 15.3644px 13px rgba(0, 0, 0, 0.035),
-          5.21632px 6.25958px 6.51852px rgba(0, 0, 0, 0.0274815),
-          1.18553px 1.42263px 3.14815px rgba(0, 0, 0, 0.0168519); */
-          box-shadow: 5px 10px 20px #000;
-        border-radius: 12px;
+      height: 100%;  
+      .slick-slide {
       }
     }
+    .slick-next {
+      display: none !important;
+      right: 0;
+      top: -30px;
+    }
+    .slick-prev {
+      display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    .slick-slider {
+      width: 100%;
+      .slick-list {
+        .slick-slide {
+        }
+      }
+    }
+  }
+`;
+
+export const Card = styled.div`
+  margin: 5px;
+  height: max-content;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  padding: 10px 10px 17.5px 10px;
+`;
+
+export const CardHeader = styled.div`
+  img {
+    width: 100%;
+    height: 154px;
+    background: url(jake-irish-R8UzGIwk4TQ-unsplash.jpg);
+    border-radius: 10px 10px 4px 4px;
+      @media screen and (max-width: 420px) {
+        height: 240px;
+      }
+  }
+`;
+export const CardBody = styled.div`
+margin-top: 10px;
+`;
+
+export const Name = styled.h1`
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 124.5%;
+  letter-spacing: 0.015em;
+  color: #023f76;
+  @media screen and (max-width: 420px) {
+    font-size: 18px;
+  }
+`;
+
+export const Goings = styled.div`
+  margin-top: 3.5px;
+  display: flex;
+  align-items: center;
+  img{
+     @media screen and (max-width: 420px) {
+       width: 15px;
+       height: 15px;
+     }
+  }
+  p {
+    margin-left: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 124.5%;
+    letter-spacing: -0.02em;
+    color: #023f76;
+    @media screen and (max-width: 420px) {
+      margin-left: 15px;
+      font-size: 16px;
+    }
+  }
+`; 
+
+export const Next = styled.div`
+  transition: all linear 0.3s;
+  &:hover{
+    transform: scale(1.2);
   }
 `;
