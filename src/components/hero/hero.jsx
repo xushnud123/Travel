@@ -12,8 +12,8 @@ const Hero = () => {
         </video>
       </BacVideo>
       <Navbar>
-          
       </Navbar>
+      
     </Wrapper>
   );
 };

@@ -64,6 +64,10 @@ export const NavWrapper = styled.div`
     border-radius: 0 10px 10px 0;
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
+  @media screen and (max-width:400px){
+    width: 100%;
+    border-radius: 0;
+  }
 `;
 
 export const NavUl = styled.ul`
@@ -72,6 +76,8 @@ export const NavUl = styled.ul`
   align-items: center;
   li {
     list-style: none;
+    width: max-content;
+    padding: 4px 0;
     a {
       text-decoration: none;
       font-family: "Raleway";
@@ -100,6 +106,29 @@ export const NavUl = styled.ul`
         font-size: 16px;
       }
     }
+    &:not(:nth-child(5)) {
+      position: relative;
+      &:after {
+        transition: all ease-in-out 0.3s;
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 4px;
+        border-radius: 2px;
+        background: #ffffff;
+      }
+      &:hover {
+        &:after{
+          width: 50%;
+          left: 50%;
+        }
+      }
+    }
+  }
+  .lang {
+    display: flex;
   }
   @media screen and (max-width: 750px) {
     flex-direction: column;
@@ -117,22 +146,94 @@ export const Button = styled.button`
   cursor: pointer;
   margin-left: 20px;
   padding: 13px;
-  border: 2px solid #ffffff;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  border: 0;
   background-color: transparent;
-  border-radius: 12px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   color: #ffffff;
+  overflow: hidden;
   @media screen and (max-width: 1100px) {
     padding: 10px;
     font-size: 18px;
   }
   @media screen and (max-width: 850px) {
     font-size: 16px;
+  }
+  position: relative;
+  &:hover {
+    span{
+
+      &:nth-child(odd) {
+        width: 50%;
+      }
+      &:nth-child(even) {
+        height: 50%;
+      }
+    }
+  }
+  span {
+    position: absolute;
+    transition: all linear 0.3s;
+    &:nth-child(1) {
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 3px;
+      background-color: #fff;
+    }
+    &:nth-child(2) {
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 10px;
+      background-color: #fff;
+    }
+    &:nth-child(3) {
+      top: 0;
+      right: 0;
+      width: 10px;
+      height: 3px;
+      background-color: #fff;
+    }
+    &:nth-child(4) {
+      top: 0;
+      right: 0;
+      width: 3px;
+      height: 10px;
+      background-color: #fff;
+    }
+    &:nth-child(6) {
+      bottom: 0;
+      right: 0;
+      width: 3px;
+      height: 10px;
+      background-color: #fff;
+    }
+    &:nth-child(5) {
+      bottom: 0;
+      right: 0;
+      width: 10px;
+      height: 3px;
+      background-color: #fff;
+    }
+    &:nth-child(7) {
+      bottom: 0;
+      left: 0;
+      width: 10px;
+      height: 3px;
+      background-color: #fff;
+    }
+    &:nth-child(8) {
+      bottom: 0;
+      left: 0;
+      width: 3px;
+      height: 10px;
+      background-color: #fff;
+    }
   }
 `;
 
@@ -214,8 +315,10 @@ export const Toggle = styled.div`
   @media screen and (max-width: 750px) {
     display: block;
   }
+  @media screen and (max-width: 400px) {
+    z-index: 2;
+  }
 `;
-
 
 export const Responsive = styled.div`
 width: 100%;

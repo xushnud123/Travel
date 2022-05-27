@@ -1,5 +1,16 @@
 import React, { useState } from "react";
-import { Logo,Logos, Wrapper, Row, NavUl, Button, Selects, Toggle, NavWrapper, Responsive } from "./navbar.e";
+import {
+  Logo,
+  Logos,
+  Wrapper,
+  Row,
+  NavUl,
+  Button,
+  Selects,
+  Toggle,
+  NavWrapper,
+  Responsive,
+} from "./navbar.e";
 import logo from "../../assets/img/logo/logo.svg";
 
 const Navbar = () => {
@@ -8,19 +19,19 @@ const Navbar = () => {
     <Wrapper>
       <Row>
         <Responsive>
-        <Logo>
-          <img src={logo} alt="img nout found" />
-        </Logo>
-        <Toggle>
-          <div
-            className={open ? "btn active" : "btn"}
-            onClick={() => setOpen(!open)}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </Toggle>
+          <Logo>
+            <img src={logo} alt="img nout found" />
+          </Logo>
+          <Toggle>
+            <div
+              className={open ? "btn active" : "btn"}
+              onClick={() => setOpen(!open)}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </Toggle>
         </Responsive>
 
         <NavWrapper open={open}>
@@ -52,7 +63,17 @@ const Navbar = () => {
                   RUS
                 </option>
               </Selects>
-              <Button type="button">Book Now</Button>
+              <Button type="button">
+                Book Now
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </Button>
             </li>
           </NavUl>
         </NavWrapper>
