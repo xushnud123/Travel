@@ -22,6 +22,7 @@ import frame from '../../assets/img/icon/Frame.svg'
 import nature1 from '../../assets/img/hero-slick/unsplash_GNdp2Q4VZjw.png'
 import nature3 from "../../assets/img/hero-slick/unsplash_MdTtpxGlrz8.png";
 import nature2 from "../../assets/img/hero-slick/unsplash_rC2_aH8lAlU.png";
+import SearchCard from "../search-card/search-card";
 
 
 const HeroCard = () => {
@@ -180,6 +181,7 @@ const HeroCard = () => {
             </div>
           </Slider>
         </ReactSlick>
+        <SearchCard/>
       </Row>
     </Wrapper>
   );

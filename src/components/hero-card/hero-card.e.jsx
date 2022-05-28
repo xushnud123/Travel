@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin-top: 110px;
+  margin-top: 80px;
   @media screen and (max-width: 700px) {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 `;
 
@@ -43,6 +43,9 @@ export const Landscape = styled.div`
       margin: 0 8px;
     }
   }
+   @media screen and (max-width: 380px) {
+     justify-content: center;
+   }
 `; 
 
 export const Vacation = styled.div`
@@ -58,6 +61,22 @@ export const Vacation = styled.div`
   .active {
     right: -60px;
     bottom: -25px;
+    @media screen and (max-width: 600px) {
+      right: 30%;
+      bottom: -50px;
+    }
+    @media screen and (max-width: 470px) {
+      right: -25px;
+      bottom: -50px;
+    }
+    @media screen and (max-width: 380px) {
+      right: -25px;
+      bottom: -85px;
+    }
+    @media screen and (max-width: 350px) {
+      right: -25px;
+      bottom: -55px;
+    }
   }
   @media screen and (max-width: 1200px) {
     width: 50%;
@@ -86,12 +105,13 @@ export const Title = styled.h1`
     font-size: 35px;
     line-height: 47px;
 }
-@media screen and (max-width:350px) {
+@media screen and (max-width:370px) {
       text-align: center; 
+      line-height: 40px;
   }
 `;
 export const Description = styled.div`
-  margin-top: 50px;
+  margin-top: 40px;
   width: 600px;
   display: flex;
   justify-content: space-between;
@@ -107,6 +127,7 @@ export const Description = styled.div`
   }
   @media screen and (max-width: 650px) {
     width: calc(100% - 4px);
+    margin-top: 34px;
   }
 `;
 
