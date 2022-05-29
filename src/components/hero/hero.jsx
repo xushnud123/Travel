@@ -1,5 +1,5 @@
 import React from "react";
-import { BacVideo, Wrapper } from "./hello.e";
+import { BacVideo, Wrapper } from "./hero.e";
 import bagVideo from "../../assets/video/video.mp4";
 import Navbar from "../navbar/navbar";
 import HeroCard from "../hero-card/hero-card";

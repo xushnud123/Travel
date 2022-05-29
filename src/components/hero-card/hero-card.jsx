@@ -1,4 +1,6 @@
 import React, { useRef, useState } from "react";
+import data from '../../data/data-cart'
+import Cards from './react-slick/card'
 import Slider from "react-slick";
 import {
   Card,
@@ -95,90 +97,9 @@ const HeroCard = () => {
         </div>
         <ReactSlick>
           <Slider ref={sliderRef} {...settings}>
-            <div>
-              <Card>
-                <CardHeader>
-                  <img src={nature2} alt="img nout found" />
-                </CardHeader>
-                <CardBody>
-                  <Name>Trip To Palawan</Name>
-                  <Goings>
-                    <img src={frame} alt="img nout found" />
-                    <p>31 people going</p>
-                  </Goings>
-                </CardBody>
-              </Card>
-            </div>
-            <div>
-              <Card>
-                <CardHeader>
-                  <img src={nature1} alt="img nout found" />
-                </CardHeader>
-                <CardBody>
-                  <Name>Trip To Baguio</Name>
-                  <Goings>
-                    <img src={frame} alt="img nout found" />
-                    <p>27 people going</p>
-                  </Goings>
-                </CardBody>
-              </Card>
-            </div>
-            <div>
-              <Card>
-                <CardHeader>
-                  <img src={nature3} alt="img nout found" />
-                </CardHeader>
-                <CardBody>
-                  <Name>Trip To Boracay</Name>
-                  <Goings>
-                    <img src={frame} alt="img nout found" />
-                    <p>20 people going</p>
-                  </Goings>
-                </CardBody>
-              </Card>
-            </div>
-            <div>
-              <Card>
-                <CardHeader>
-                  <img src={nature2} alt="img nout found" />
-                </CardHeader>
-                <CardBody>
-                  <Name>Trip To Palawan</Name>
-                  <Goings>
-                    <img src={frame} alt="img nout found" />
-                    <p>31 people going</p>
-                  </Goings>
-                </CardBody>
-              </Card>
-            </div>
-            <div>
-              <Card>
-                <CardHeader>
-                  <img src={nature1} alt="img nout found" />
-                </CardHeader>
-                <CardBody>
-                  <Name>Trip To Palawan</Name>
-                  <Goings>
-                    <img src={frame} alt="img nout found" />
-                    <p>31 people going</p>
-                  </Goings>
-                </CardBody>
-              </Card>
-            </div>
-            <div>
-              <Card>
-                <CardHeader>
-                  <img src={nature3} alt="img nout found" />
-                </CardHeader>
-                <CardBody>
-                  <Name>Trip To Palawan</Name>
-                  <Goings>
-                    <img src={frame} alt="img nout found" />
-                    <p>31 people going</p>
-                  </Goings>
-                </CardBody>
-              </Card>
-            </div>
+           {
+             data.map((item,index) =><Cards item={item} key={index}/>)
+           }
           </Slider>
         </ReactSlick>
         <SearchCard/>
