@@ -21,6 +21,7 @@ export const BacVideo = styled.div`
     .vid{
       width: 100%;
       height: 100vh;
+      height: 100%;
       object-fit: cover;
     }
 `
