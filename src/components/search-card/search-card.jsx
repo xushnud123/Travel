@@ -3,6 +3,7 @@ import Ripple from "../common/ripple-button/Ripple";
 import "react-datepicker/dist/react-datepicker.css";
 import selectImg from '../../assets/img/search-card/Group.svg'
 import data from '../../assets/img/search-card/data.svg'
+import person from "../../assets/img/search-card/person.svg";
 import { Card, Row, Wrapper,CardHeader,Selects, InputWrapper,Data } from "./search-card.e";
 
 
@@ -66,9 +67,9 @@ const SearchCard = () => {
             </InputWrapper>
           </CardHeader>
           <CardHeader>
-            <img src={data} alt="img noud found" />
+            <img src={person} alt="img noud found" />
             <InputWrapper>
-              <p>Check-in</p>
+              <p>Guests</p>
               <Data
                 dateFormat="yyyy.MM.dd"
                 selected={startDate}
@@ -79,8 +80,10 @@ const SearchCard = () => {
               />
             </InputWrapper>
           </CardHeader>
-        </Card>
+          <CardHeader>
         <Ripple>Search</Ripple>
+          </CardHeader>
+        </Card>
       </Row>
     </Wrapper>
   );
