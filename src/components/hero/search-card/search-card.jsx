@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import Ripple from "../common/ripple-button/Ripple";
+import { motion } from "framer-motion";
+import Ripple from "../../common/ripple-button/Ripple";
 import "react-datepicker/dist/react-datepicker.css";
-import selectImg from '../../assets/img/search-card/Group.svg'
-import data from '../../assets/img/search-card/data.svg'
-import person from "../../assets/img/search-card/person.svg";
+import selectImg from '../../../assets/img/search-card/Group.svg'
+import data from '../../../assets/img/search-card/data.svg'
+import person from "../../../assets/img/search-card/person.svg";
 import { Card, Row, Wrapper,CardHeader,Selects, InputWrapper,Data } from "./search-card.e";
 
 
@@ -23,10 +24,31 @@ const SearchCard = () => {
     };
     
   return (
-    <Wrapper>
-      <Row>
-        <Card>
-          <CardHeader>
+    <Wrapper
+      initial={{
+        scale: 0,
+      }}
+      animate={{
+        scale: 1,
+      }}
+      style={{}}
+      transition={{ duration: 0.9 }}
+    >
+      <Row
+      >
+        <Card
+       
+          initial={{
+            scale: 0,
+          }}
+          animate={{
+            scale: 1,
+          }}
+          style={{}}
+          transition={{ duration: 0.9 }}
+        >
+          <CardHeader
+          >
             <img src={selectImg} alt="" />
             <InputWrapper open={true}>
               <p>Accommodation</p>
@@ -81,7 +103,7 @@ const SearchCard = () => {
             </InputWrapper>
           </CardHeader>
           <CardHeader>
-        <Ripple>Search</Ripple>
+            <Ripple>Search</Ripple>
           </CardHeader>
         </Card>
       </Row>

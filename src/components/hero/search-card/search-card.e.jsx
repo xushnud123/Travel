@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import Select from "react-select";
 import DatePicker from "react-datepicker";
+import { motion } from "framer-motion";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   margin-top: 36px;
   padding: 20px 36px;
   background: rgba(255, 255, 255, 0.4);
@@ -23,14 +24,14 @@ export const Wrapper = styled.div`
     padding: 10px 10px;
   }
 `;
-export const Row = styled.div`
+export const Row = styled(motion.div)`
   width: 100%;
   /* display: grid;
   grid-template-columns: 83% 15%;
   grid-gap: 2%; */
 `;
 
-export const Card = styled.div`
+export const Card = styled(motion.div)`
   width: 100%;
   height: 100%;
   display: grid;

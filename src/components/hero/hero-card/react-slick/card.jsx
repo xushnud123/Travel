@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardBody, CardHeader, Goings, Name ,CardWrapper} from "../hero-card.e";
-import frame from "../../../assets/img/icon/Frame.svg";
-import nature1 from "../../../assets/img/hero-slick/unsplash_GNdp2Q4VZjw.png";
-import nature3 from "../../../assets/img/hero-slick/unsplash_MdTtpxGlrz8.png";
-import nature2 from "../../../assets/img/hero-slick/unsplash_rC2_aH8lAlU.png";
+import frame from "../../../../assets/img/icon/Frame.svg";
+import nature1 from "../../../../assets/img/hero-slick/unsplash_GNdp2Q4VZjw.png";
+import nature3 from "../../../../assets/img/hero-slick/unsplash_MdTtpxGlrz8.png";
+import nature2 from "../../../../assets/img/hero-slick/unsplash_rC2_aH8lAlU.png";
 
 const Cards = ({ item}) => {
     
