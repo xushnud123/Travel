@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   width: 100%;
 overflow: hidden;
+/* position: ${({open}) => open ? "fixed" :'relative'}; */
 `;
 
 export const Row = styled.div`
@@ -12,7 +13,7 @@ export const Row = styled.div`
   display: flex;
   justify-content: space-between;
   position: relative;
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 960px) {
     margin: 0 30px;
   }
 `;

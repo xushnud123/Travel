@@ -49,10 +49,9 @@ export const Title = styled.h1`
 `;
 
 export const Row = styled(motion.div)`
-  padding-bottom: 106px;
   margin: 0 61px;
   cursor: grab;
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 960px) {
     margin: 0 30px;
   }
   @media screen and (max-width: 600px) {
@@ -66,6 +65,21 @@ export const CardWrapper = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
+  ::-webkit-scrollbar {
+    height: 5px;
+    background-color: #e9ecef;
+    border-radius: 2.5px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 2.5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #fca311;
+    border-radius: 2.5px;
+  }
+
   @media screen and (max-width: 1250px) {
     grid-gap: 30px;
   }

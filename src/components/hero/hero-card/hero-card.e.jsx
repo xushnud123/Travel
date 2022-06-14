@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 
 export const Row = styled.div`
   margin: 0 61px;
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 960px) {
     margin: 0 30px;
   }
   @media screen and (max-width: 600px) {

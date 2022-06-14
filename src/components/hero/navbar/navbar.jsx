@@ -16,7 +16,7 @@ import logo from "../../../assets/img/logo/logo.svg";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <Wrapper>
+    <Wrapper open={open}>
       <Row>
         <Responsive>
           <Logo>

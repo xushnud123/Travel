@@ -27,7 +27,7 @@ const ServicesCard = () => {
    }, []);
   return (
     <Wrapper>
-      <TitleWrapper plus={plus}>
+      <TitleWrapper>
         <Description>CATEGORY</Description>
         <Title>We Offer Best Services</Title>
         <div className="plus">
