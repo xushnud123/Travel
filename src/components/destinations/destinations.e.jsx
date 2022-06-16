@@ -12,6 +12,9 @@ export const Row = styled.div`
   @media screen and (max-width: 1200px) {
     margin: 0 0px;
   }
+  @media screen and (max-width: 600px) {
+    padding-bottom: 60px;
+  }
 `;
 
 export const Cards = styled(Slider)`
