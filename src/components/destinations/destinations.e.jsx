@@ -8,18 +8,17 @@ export const Destina = styled.div`
 
 export const Row = styled.div`
   padding-bottom: 106px;
-  margin: 0 61px;
-  @media screen and (max-width: 960px) {
+  margin: 0 80px;
+  @media screen and (max-width: 1200px) {
     margin: 0 0px;
   }
- 
 `;
 
 export const Cards = styled(Slider)`
   width: 100%;
   grid-gap: 25px;
   /* .slick-slider { */
-  button{
+  button {
     z-index: 1;
   }
   .slick-next {
@@ -36,14 +35,24 @@ export const Cards = styled(Slider)`
 export const Card = styled.div`
   justify-self: center;
   width: 314px;
-  height: 457px;
+  height: 420px;
   margin: 0 auto;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 24px;
-  overflow: hidden;
   transition: all linear 0.225s;
+  position: relative;
+  z-index: 1;
   &:hover {
     box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
+  }
+  .decore {
+    right: -45px;
+    z-index: -3;
+    top: 20%;
+    position: absolute;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
   @media screen and (max-width: 1100px) {
     width: 280px;
@@ -56,15 +65,12 @@ export const Card = styled.div`
     height: 350px;
     width: 90%;
   }
-  /* @media screen and (max-width: 750px) {
-    height: 300px;
-    width: 200px;
-  } */
 `;
 
 export const CardBody = styled.div`
   height: 70%;
   img {
+    border-radius: 24px 24px 0 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -72,8 +78,11 @@ export const CardBody = styled.div`
 `;
 
 export const CardFooter = styled.div`
+  background-color: #fff;
   padding: 27px 42px 0 20px;
   height: 30%;
+  box-sizing: border-box;
+  border-radius: 0 0 24px 24px;
 `;
 
 export const NameWrapper = styled.div`

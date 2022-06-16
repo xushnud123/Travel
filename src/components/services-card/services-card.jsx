@@ -40,7 +40,15 @@ const ServicesCard = () => {
         whileTap={{ cursor: "grabbing" }}
       >
         <CardWrapper drag="x" dragConstraints={{ right: 0, left: -width }}>
-          <Card>
+          <Card
+            initial={{
+              scale: 0,
+            }}
+            animate={{
+              scale: 1,
+            }}
+            transition={{ duration: 0.9 }}
+          >
             <CardBody>
               <img src={antena} className="img1" alt="img not found" />
             </CardBody>
@@ -51,7 +59,15 @@ const ServicesCard = () => {
               </p>
             </CardFooter>
           </Card>
-          <Card>
+          <Card
+            initial={{
+              scale: 0,
+            }}
+            animate={{
+              scale: 1,
+            }}
+            transition={{ duration: 0.9 }}
+          >
             <CardBody>
               <img src={plane} className="img1" alt="img not found" />
             </CardBody>
@@ -63,7 +79,15 @@ const ServicesCard = () => {
             </CardFooter>
             <img src={images} className="img_2" alt="img not found" />
           </Card>
-          <Card>
+          <Card
+            initial={{
+              scale: 0,
+            }}
+            animate={{
+              scale: 1,
+            }}
+            transition={{ duration: 0.9 }}
+          >
             <CardBody>
               <img src={mikrofon} className="img1" alt="img not found" />
             </CardBody>
@@ -74,7 +98,15 @@ const ServicesCard = () => {
               </p>
             </CardFooter>
           </Card>
-          <Card>
+          <Card
+            initial={{
+              scale: 0,
+            }}
+            animate={{
+              scale: 1,
+            }}
+            transition={{ duration: 0.9 }}
+          >
             <CardBody>
               <img src={settings} className="img1" alt="img not found" />
             </CardBody>

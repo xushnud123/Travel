@@ -16,6 +16,9 @@ export const Row = styled.div`
   @media screen and (max-width: 960px) {
     margin: 0 30px;
   }
+  @media screen and (max-width: 600px) {
+    margin: 0 20px;
+  }
 `;
 
 export const Logo = styled.div`

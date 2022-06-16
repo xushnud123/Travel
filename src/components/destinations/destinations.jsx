@@ -16,6 +16,7 @@ import {
 } from "./destinations.e";
 import Madina from "../../assets/img/des/adli-wahid-Y9bC2h5V9c8-unsplash.jpg";
 import vector from "../../assets/img/des/Vector.svg";
+import decore from '../../assets/img/des/Decore.svg'
 
 const Destinations = () => {
     const settings = {
@@ -108,6 +109,7 @@ const Destinations = () => {
                   <p>10 Days Trip</p>
                 </Location>
               </CardFooter>
+              <img src={decore} className="decore"  alt="img nout found" />
             </Card>
           </div>
         </Cards>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin-top: 80px;
+  overflow: hidden;
   @media screen and (max-width: 700px) {
     margin-top: 40px;
   }
@@ -14,7 +15,8 @@ export const Row = styled.div`
   }
   @media screen and (max-width: 600px) {
     /* width: 100%; */
-    width: calc(100% - 60px);
+    width: calc(100% - 40px);
+    margin: 0 auto;
   }
 `;
 
@@ -74,7 +76,7 @@ export const Vacation = styled.div`
       bottom: -85px;
     }
     @media screen and (max-width: 350px) {
-      right: -25px;
+      right: -15px;
       bottom: -55px;
     }
   }
@@ -128,6 +130,9 @@ export const Description = styled.div`
   @media screen and (max-width: 650px) {
     width: calc(100% - 4px);
     margin-top: 34px;
+    h1{
+      font-size: 24px;
+    }
   }
 `;
 
@@ -173,6 +178,9 @@ export const Card = styled.div`
   border: 2px solid #ffffff;
   border-radius: 12px;
   padding: 10px 10px 17.5px 10px;
+   @media screen and (max-width: 420px) {
+    margin: 0;
+    }
 `;
 
 export const CardHeader = styled.div`

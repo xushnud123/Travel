@@ -56,7 +56,8 @@ export const Row = styled(motion.div)`
   }
   @media screen and (max-width: 600px) {
     /* width: 100%; */
-    width: calc(100% - 60px);
+    width: calc(100% - 40px);
+    margin: 0 20px;
   }
 `;
 
@@ -65,6 +66,7 @@ export const CardWrapper = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
+  padding: 40px 0;
   ::-webkit-scrollbar {
     height: 5px;
     background-color: #e9ecef;
@@ -87,6 +89,9 @@ export const CardWrapper = styled(motion.div)`
     padding: 30px 0;
     overflow-y: hidden;
     display: flex;
+  }
+  @media screen and (max-width: 400px) {
+    grid-gap: 0;
   }
 `;
 
@@ -140,6 +145,9 @@ export const Card = styled(motion.div)`
         height: 100px;
       }
     }
+  }
+  @media screen and (max-width: 400px) {
+    margin: 0 15px;
   }
 `;
 

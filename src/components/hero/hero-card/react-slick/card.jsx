@@ -18,9 +18,6 @@ const Cards = ({ item}) => {
         animate={{
           scale: 1,
         }}
-        style={{
-              
-        }}
         transition={{ duration: 0.9 }}
         className="name"
       >
