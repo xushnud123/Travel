@@ -2,9 +2,13 @@ import styled from "styled-components";
 import ReactCardCarousel from "react-card-carousel";
 
 export const AboutWrapper = styled.div`
-  margin-top: 71px;
+  margin-top: 120px;
   width: 100%;
   margin-bottom: 171px;
+  @media screen and (max-width: 630px) {
+    margin-top: 0px;
+    margin-bottom: 271px;
+  }
 `;
 
 export const Row = styled.div`
@@ -23,7 +27,8 @@ export const CardWrapper = styled.div`
   margin-top: 15px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 830px) {
+    grid-template-columns: 40% 60%;
     grid-gap: 20px;
   }
   @media screen and (max-width: 630px) {
@@ -47,12 +52,14 @@ export const CardRight = styled.div`
   justify-content: center;
   align-items: middle;
   div {
-    box-shadow: 0 !important;
     /* div {
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px ;
       border-radius: 10px;
       box-sizing: border-box;
     } */
+  }
+  @media screen and (max-width: 630px) {
+    margin-top: 140px;
   }
 `;
 
@@ -82,7 +89,7 @@ export const Card = styled.div`
     color: #5e6282;
   }
   .name_wrap {
-      margin-top: 31px;
+    margin-top: 31px;
     display: flex;
     align-items: center;
     box-shadow: fff 0px 8px 24px !important;
@@ -111,7 +118,44 @@ export const Card = styled.div`
         color: #5e6282;
       }
     }
+    @media screen and (max-width: 830px) {
+      margin-top: 25px;
+      .img_person {
+        width: 60px;
+        height: 60px;
+      }
+    }
   }
+  @media screen and (max-width: 1000px) {
+    width: 400px;
+    padding: 15px;
+  }
+  @media screen and (max-width: 830px) {
+    width: 360px;
+    padding: 15px;
+    p {
+      line-height: 28px;
+    }
+  }
+  @media screen and (max-width: 670px) and (min-width: 630px) {
+    width: 340px;
+  }
+  @media screen and (max-width: 630px) {
+    width: 450px;
+    padding: 20px;
+  }
+  @media screen and (max-width: 490px) {
+    width: 360px;
+    padding: 15px;
+  }
+    @media screen and (max-width: 390px) {
+      width:300px;
+      height: auto;
+      p{
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
 `;
 
 export const Title = styled.div`

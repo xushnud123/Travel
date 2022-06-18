@@ -19,12 +19,6 @@ import settings from '../../assets/img/service-card/Group 49.svg'
 import images from '../../assets/img/service-card/Rectangle 157.svg'
 
 const ServicesCard = () => {
-   const [width, setWidth] = useState(0);
-   const carousel = useRef();
-
-   useEffect(() => {
-     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-   }, []);
   return (
     <Wrapper>
       <TitleWrapper>
@@ -35,19 +29,10 @@ const ServicesCard = () => {
         </div>
       </TitleWrapper>
       <Row
-        ref={carousel}
         className="carousel"
-        whileTap={{ cursor: "grabbing" }}
       >
-        <CardWrapper drag="x" dragConstraints={{ right: 0, left: -width }}>
+        <CardWrapper>
           <Card
-            initial={{
-              scale: 0,
-            }}
-            animate={{
-              scale: 1,
-            }}
-            transition={{ duration: 0.9 }}
           >
             <CardBody>
               <img src={antena} className="img1" alt="img not found" />
@@ -60,13 +45,7 @@ const ServicesCard = () => {
             </CardFooter>
           </Card>
           <Card
-            initial={{
-              scale: 0,
-            }}
-            animate={{
-              scale: 1,
-            }}
-            transition={{ duration: 0.9 }}
+           
           >
             <CardBody>
               <img src={plane} className="img1" alt="img not found" />
@@ -80,13 +59,7 @@ const ServicesCard = () => {
             <img src={images} className="img_2" alt="img not found" />
           </Card>
           <Card
-            initial={{
-              scale: 0,
-            }}
-            animate={{
-              scale: 1,
-            }}
-            transition={{ duration: 0.9 }}
+           
           >
             <CardBody>
               <img src={mikrofon} className="img1" alt="img not found" />
@@ -99,13 +72,6 @@ const ServicesCard = () => {
             </CardFooter>
           </Card>
           <Card
-            initial={{
-              scale: 0,
-            }}
-            animate={{
-              scale: 1,
-            }}
-            transition={{ duration: 0.9 }}
           >
             <CardBody>
               <img src={settings} className="img1" alt="img not found" />

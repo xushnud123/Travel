@@ -24,7 +24,7 @@ const About = () => {
           </CardLeft>
           <CardRight>
             <ReactCard
-              autoplay={false}
+              autoplay={true}
               autoplay_speed={2500}
               alignment="vertical"
             >
