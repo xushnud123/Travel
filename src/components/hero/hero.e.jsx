@@ -4,7 +4,8 @@ export const Wrapper = styled.div`
   width: 100%;
   height: max-content;
   padding-bottom: 12.5px;
-  position: relative;
+  position:relative;
+
   /* background: ${(props) => `url(${props.img})`};
     background-size:100vw 700px contain; */
 `;

@@ -13,8 +13,7 @@ import {
 } from "./navbar.e";
 import logo from "../../../assets/img/logo/logo.svg";
 
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
+const Navbar = ({open,setOpen}) => {
   return (
     <Wrapper open={open}>
       <Row>

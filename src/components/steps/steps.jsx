@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from "aos";
 import { Card, CardBody, CardFooter, CardLeft, CardRight, CardWrapper, Description, Row, StepsWrapper, Title } from './steps.e';
 import img1 from '../../assets/img/steps/Group 7.svg'
 import img2 from "../../assets/img/steps/Group 11.svg";
@@ -6,12 +7,20 @@ import img3 from "../../assets/img/steps/Group 12.svg";
 import left from '../../assets/img/steps/Image.png'
 
 const Steps = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  });
     return (
       <StepsWrapper>
         <Row>
           <Description>Easy and Fast</Description>
           <CardWrapper>
-            <CardLeft>
+            <CardLeft data-aos="fade-up-right">
               <Title>Book your next trip in 3 easy steps</Title>
               <Card>
                 <CardBody>
@@ -50,7 +59,7 @@ const Steps = () => {
                 </CardFooter>
               </Card>
             </CardLeft>
-            <CardRight>
+            <CardRight data-aos="fade-up-left">
               <img src={left} alt="img nout found" />
             </CardRight>
           </CardWrapper>

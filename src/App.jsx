@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { AppWrapper } from './App.e';
 import About from './components/about/about';
 import Comp from './components/comp/comp';
 import Destinations from './components/destinations/destinations';
@@ -10,9 +11,10 @@ import Subscribe from './components/subscribe/subscribe';
 
 
 function App() {
+   const [open, setOpen] = useState(false);
   return (
-    <React.Fragment>
-      <Hero/>
+    <AppWrapper open={open}>
+      <Hero open={open} setOpen={setOpen}/>
       <ServicesCard/>
       <Destinations/>
       <Steps/>
@@ -20,7 +22,7 @@ function App() {
       <Comp/>
       <Subscribe/>
       <Footer/>
-    </React.Fragment>
+    </AppWrapper>
   );
 }
 

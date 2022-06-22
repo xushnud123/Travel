@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import {
   TitleWrapper,
   Description,
@@ -52,6 +53,15 @@ const Destinations = () => {
         },
       ],
     };
+     useEffect(() => {
+       AOS.init({
+         offset: 200,
+         duration: 600,
+         easing: "ease-in-sine",
+         delay: 100,
+       });
+     });
+
   return (
     <Destina>
       <TitleWrapper>
@@ -61,7 +71,7 @@ const Destinations = () => {
       <Row>
         <Cards {...settings}>
           <div>
-            <Card>
+            <Card data-aos="fade-right">
               <CardBody>
                 <img src={Madina} alt="img not found" />
               </CardBody>
@@ -78,7 +88,7 @@ const Destinations = () => {
             </Card>
           </div>
           <div>
-            <Card>
+            <Card data-aos="fade-down">
               <CardBody>
                 <img src={Madina} alt="img not found" />
               </CardBody>
@@ -95,7 +105,7 @@ const Destinations = () => {
             </Card>
           </div>
           <div>
-            <Card>
+            <Card data-aos="fade-left">
               <CardBody>
                 <img src={Madina} alt="img not found" />
               </CardBody>
@@ -109,7 +119,7 @@ const Destinations = () => {
                   <p>10 Days Trip</p>
                 </Location>
               </CardFooter>
-              <img src={decore} className="decore"  alt="img nout found" />
+              <img src={decore} className="decore" alt="img nout found" />
             </Card>
           </div>
         </Cards>

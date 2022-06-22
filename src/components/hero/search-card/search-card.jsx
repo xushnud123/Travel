@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
 import Ripple from "../../common/ripple-button/Ripple";
 import "react-datepicker/dist/react-datepicker.css";
 import selectImg from '../../../assets/img/search-card/Group.svg'
@@ -22,33 +22,40 @@ const SearchCard = () => {
     const selectDateHandler = (d) => {
       setDate(d);
     };
+
+    useEffect(() => {
+      AOS.init({
+        offset: 200,
+        duration: 600,
+        easing: "ease-in-sine",
+        delay: 100,
+      });
+    });
     
   return (
     <Wrapper
-      initial={{
-        scale: 0,
-      }}
-      animate={{
-        scale: 1,
-      }}
-      style={{}}
-      transition={{ duration: 0.9 }}
+      // initial={{
+      //   scale: 0,
+      // }}
+      // animate={{
+      //   scale: 1,
+      // }}
+      // style={{}}
+      // transition={{ duration: 0.1 }}
+      data-aos="fade-left"
     >
-      <Row
-      >
+      <Row>
         <Card
-       
-          initial={{
-            scale: 0,
-          }}
-          animate={{
-            scale: 1,
-          }}
-          style={{}}
-          transition={{ duration: 0.9 }}
+          // initial={{
+          //   scale: 0,
+          // }}
+          // animate={{
+          //   scale: 1,
+          // }}
+          // style={{}}
+          // transition={{ duration: 0.9 }}
         >
-          <CardHeader
-          >
+          <CardHeader>
             <img src={selectImg} alt="" />
             <InputWrapper open={true}>
               <p>Accommodation</p>

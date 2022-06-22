@@ -4,7 +4,8 @@ import bagVideo from "../../assets/video/video.mp4";
 import Navbar from "./navbar/navbar";
 import HeroCard from "./hero-card/hero-card";
 
-const Hero = () => {
+const Hero = ({open,setOpen}) => {
+  
   return (
     <Wrapper>
       <BacVideo>
@@ -12,7 +13,7 @@ const Hero = () => {
           <source src={bagVideo} type="video/mp4" />
         </video>
       </BacVideo>
-      <Navbar/>
+      <Navbar open={open} setOpen={setOpen}/>
       <HeroCard/>
 
     </Wrapper>

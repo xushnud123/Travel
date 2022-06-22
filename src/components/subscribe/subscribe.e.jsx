@@ -54,7 +54,7 @@ export const Row = styled.div`
     background-repeat: no-repeat;
     @media screen and (max-width: 800px) {
       right: 0px;
-      bottom: 0%;
+      /* bottom: 0%; */
       width: 100px;
       height: 110px;
       background-size: 100% 100%;
@@ -113,7 +113,8 @@ export const Card = styled.div`
       bottom: 10px;
     }
     @media screen and (max-width: 450px) {
-      bottom: 71px;
+      bottom: 86px;
+      left: 10px;
     }
   }
   @media screen and (max-width: 800px) {
@@ -154,6 +155,8 @@ export const Input = styled.input`
   }
   @media screen and (max-width: 450px) {
     width: 100%;
+    height: 50px;
+    padding-left: 40px;
   }
 `;
 
@@ -188,5 +191,8 @@ export const Button = styled.button`
   }
   @media screen and (max-width: 450px) {
     margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    margin-left: 0;
   }
 `;

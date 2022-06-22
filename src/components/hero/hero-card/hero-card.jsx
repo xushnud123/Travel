@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState,useEffect } from "react";
 import data from '../../../data/data-cart'
+import AOS from "aos";
 import Cards from './react-slick/card'
 import Slider from "react-slick";
 import SearchCard from "../search-card/search-card";
@@ -17,7 +18,7 @@ import {
 import plane from '../../../assets/img/hero/plane.svg'
 import next from '../../../assets/img/icon/icon.svg'
 
-
+ 
 const HeroCard = () => {
     const [open,setOpen] = useState(false)
 
@@ -58,9 +59,19 @@ const HeroCard = () => {
       sliderRef.current.slickNext();
     };
 
+      useEffect(() => {
+        AOS.init({
+          offset: 200,
+          duration: 600,
+          easing: "ease-in-sine",
+          delay: 100,
+        });
+      });
+  
+
   return (
     <Wrapper>
-      <Row>
+      <Row data-aos="fade-right">
         <HeroTitle>
           <Landscape>
             <p>Mountains</p>
@@ -88,12 +99,12 @@ const HeroCard = () => {
         </div>
         <ReactSlick>
           <Slider ref={sliderRef} {...settings}>
-           {
-             data.map((item,index) =><Cards item={item} key={index}/>)
-           }
+            {data.map((item, index) => (
+              <Cards item={item} key={index} />
+            ))}
           </Slider>
         </ReactSlick>
-        <SearchCard/>
+        <SearchCard />
       </Row>
     </Wrapper>
   );

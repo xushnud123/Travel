@@ -12,13 +12,13 @@ const Cards = ({ item}) => {
   return (
     <React.Fragment>
       <motion.div
-        initial={{
-          scale: 0,          
-        }}
-        animate={{
-          scale: 1,
-        }}
-        transition={{ duration: 0.9 }}
+        // initial={{
+        //   scale: 0,          
+        // }}
+        // animate={{
+        //   scale: 1,
+        // }}
+        // transition={{ duration: 0.9 }}
         className="name"
       >
         <Card translate="0" layout>

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import {
   AboutWrapper,
   Card,
@@ -13,16 +14,23 @@ import {
 import person from '../../assets/img/Image.svg'
 
 const About = () => {
-
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  });
   return (
     <AboutWrapper>
       <Row>
-        <Description>Easy and Fast</Description>
+        <Description data-aos="fade-up-right">Easy and Fast</Description>
         <CardWrapper>
-          <CardLeft>
+          <CardLeft data-aos="fade-up-right">
             <Title>Book your next trip in 3 easy steps</Title>
           </CardLeft>
-          <CardRight>
+          <CardRight data-aos="fade-up-left">
             <ReactCard
               autoplay={false}
               autoplay_speed={2500}

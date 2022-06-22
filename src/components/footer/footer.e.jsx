@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
-  margin-top: 120px;
+  margin-top: 100px;
   width: 100%;
 
   @media screen and (max-width: 630px) {
     padding-top: 30px;
+    margin-top: 50px;
   }
 `;
 

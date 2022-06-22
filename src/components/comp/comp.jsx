@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import { Card, CardWrapper, CompWrapper, ReactSlick, Row, Title } from "./comp.e";
 import philip from '../../assets/img/comp/23321.svg'
 import cebu from "../../assets/img/comp/Cebu_Pacific_Air_logo_logotype.svg";
 import asia from "../../assets/img/comp/AirAsia_logo_logotype_circle.svg";
 
 const Comp = () => {
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  });
+
      const settings = {
        infinite: true,
        slidesToShow: 3,
@@ -33,7 +44,7 @@ const Comp = () => {
        ],
      };
   return (
-    <CompWrapper>
+    <CompWrapper data-aos="zoom-in-down">
       <Row>
         <Title>Trusted by companies</Title>
         <CardWrapper>
