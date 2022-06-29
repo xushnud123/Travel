@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import Ripple from "../common/ripple-button/Ripple";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import Ripple from "../../common/ripple-button/Ripple";
 import "react-datepicker/dist/react-datepicker.css";
-import selectImg from '../../assets/img/search-card/Group.svg'
-import data from '../../assets/img/search-card/data.svg'
+import selectImg from '../../../assets/img/search-card/Group.svg'
+import data from '../../../assets/img/search-card/data.svg'
+import person from "../../../assets/img/search-card/person.svg";
 import { Card, Row, Wrapper,CardHeader,Selects, InputWrapper,Data } from "./search-card.e";
 
 
@@ -20,11 +22,39 @@ const SearchCard = () => {
     const selectDateHandler = (d) => {
       setDate(d);
     };
+
+    useEffect(() => {
+      AOS.init({
+        offset: 200,
+        duration: 600,
+        easing: "ease-in-sine",
+        delay: 100,
+      });
+    });
     
   return (
-    <Wrapper>
+    <Wrapper
+      // initial={{
+      //   scale: 0,
+      // }}
+      // animate={{
+      //   scale: 1,
+      // }}
+      // style={{}}
+      // transition={{ duration: 0.1 }}
+      data-aos="fade-left"
+    >
       <Row>
-        <Card>
+        <Card
+          // initial={{
+          //   scale: 0,
+          // }}
+          // animate={{
+          //   scale: 1,
+          // }}
+          // style={{}}
+          // transition={{ duration: 0.9 }}
+        >
           <CardHeader>
             <img src={selectImg} alt="" />
             <InputWrapper open={true}>
@@ -66,9 +96,9 @@ const SearchCard = () => {
             </InputWrapper>
           </CardHeader>
           <CardHeader>
-            <img src={data} alt="img noud found" />
+            <img src={person} alt="img noud found" />
             <InputWrapper>
-              <p>Check-in</p>
+              <p>Guests</p>
               <Data
                 dateFormat="yyyy.MM.dd"
                 selected={startDate}
@@ -79,8 +109,10 @@ const SearchCard = () => {
               />
             </InputWrapper>
           </CardHeader>
+          <CardHeader>
+            <Ripple>Search</Ripple>
+          </CardHeader>
         </Card>
-        <Ripple>Search</Ripple>
       </Row>
     </Wrapper>
   );

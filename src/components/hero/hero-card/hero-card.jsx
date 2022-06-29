@@ -1,16 +1,13 @@
-import React, { useRef, useState } from "react";
-import data from '../../data/data-cart'
+import React, { useRef, useState,useEffect } from "react";
+import data from '../../../data/data-cart'
+import AOS from "aos";
 import Cards from './react-slick/card'
 import Slider from "react-slick";
+import SearchCard from "../search-card/search-card";
 import {
-  Card,
-  CardBody,
-  CardHeader,
   Description,
-  Goings,
   HeroTitle,
   Landscape,
-  Name,
   Next,
   ReactSlick,
   Row,
@@ -18,15 +15,10 @@ import {
   Vacation,
   Wrapper,
 } from "./hero-card.e";
-import plane from '../../assets/img/hero/plane.svg'
-import next from '../../assets/img/icon/icon.svg'
-import frame from '../../assets/img/icon/Frame.svg'
-import nature1 from '../../assets/img/hero-slick/unsplash_GNdp2Q4VZjw.png'
-import nature3 from "../../assets/img/hero-slick/unsplash_MdTtpxGlrz8.png";
-import nature2 from "../../assets/img/hero-slick/unsplash_rC2_aH8lAlU.png";
-import SearchCard from "../search-card/search-card";
+import plane from '../../../assets/img/hero/plane.svg'
+import next from '../../../assets/img/icon/icon.svg'
 
-
+ 
 const HeroCard = () => {
     const [open,setOpen] = useState(false)
 
@@ -67,9 +59,19 @@ const HeroCard = () => {
       sliderRef.current.slickNext();
     };
 
+      useEffect(() => {
+        AOS.init({
+          offset: 200,
+          duration: 600,
+          easing: "ease-in-sine",
+          delay: 100,
+        });
+      });
+  
+
   return (
     <Wrapper>
-      <Row>
+      <Row data-aos="fade-right">
         <HeroTitle>
           <Landscape>
             <p>Mountains</p>
@@ -97,12 +99,12 @@ const HeroCard = () => {
         </div>
         <ReactSlick>
           <Slider ref={sliderRef} {...settings}>
-           {
-             data.map((item,index) =><Cards item={item} key={index}/>)
-           }
+            {data.map((item, index) => (
+              <Cards item={item} key={index} />
+            ))}
           </Slider>
         </ReactSlick>
-        <SearchCard/>
+        <SearchCard />
       </Row>
     </Wrapper>
   );
