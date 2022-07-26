@@ -1,13 +1,19 @@
 import styled from "styled-components";
+import img from "../../assets/img/1.jpg";
 
 export const Wrapper = styled.div`
   width: 100%;
   height: max-content;
   padding-bottom: 12.5px;
   position:relative;
-
-  /* background: ${(props) => `url(${props.img})`};
-    background-size:100vw 700px contain; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(${img});
+  min-height: 100vh;
+  @media screen and (max-width:800px) {
+    background-size: cover;
+    background-position: center;
+  }
 `;
 
 export const BacVideo = styled.div`
@@ -20,10 +26,10 @@ export const BacVideo = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    .vid{
+    .img{
       width: 100%;
       /* height: 100vh; */
-      height: 100%;
+      height: auto;
       object-fit: cover;
     }
 `
