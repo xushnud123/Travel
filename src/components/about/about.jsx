@@ -25,25 +25,24 @@ const About = () => {
   return (
     <AboutWrapper>
       <Row>
-        <Description data-aos="fade-up-right">Easy and Fast</Description>
+        <Description data-aos='fade-up-right'>Guvohlar</Description>
         <CardWrapper>
-          <CardLeft data-aos="fade-up-right">
-            <Title>Book your next trip in 3 easy steps</Title>
+          <CardLeft data-aos='fade-up-right'>
+            <Title>Odamlar nima deyishadi Biz haqimizda.</Title>
           </CardLeft>
-          <CardRight data-aos="fade-up-left">
+          <CardRight data-aos='fade-up-left'>
             <ReactCard
               autoplay={false}
               autoplay_speed={2500}
-              alignment="vertical"
-            >
+              alignment='vertical'>
               <Card>
                 <p>
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis.”
                 </p>
-                <div className="name_wrap">
-                  <img src={person} className="img_person" alt="" />
-                  <div className="name">
+                <div className='name_wrap'>
+                  <img src={person} className='img_person' alt='' />
+                  <div className='name'>
                     <h1>Lei Britz1</h1>
                     <h2>Laguna, Philippines</h2>
                   </div>
@@ -54,9 +53,9 @@ const About = () => {
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis.”
                 </p>
-                <div className="name_wrap">
-                  <img src={person} className="img_person" alt="" />
-                  <div className="name">
+                <div className='name_wrap'>
+                  <img src={person} className='img_person' alt='' />
+                  <div className='name'>
                     <h1>Lei Britz1</h1>
                     <h2>Laguna, Philippines</h2>
                   </div>
@@ -67,9 +66,9 @@ const About = () => {
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis.”
                 </p>
-                <div className="name_wrap">
-                  <img src={person} className="img_person" alt="" />
-                  <div className="name">
+                <div className='name_wrap'>
+                  <img src={person} className='img_person' alt='' />
+                  <div className='name'>
                     <h1>Lei Britz1</h1>
                     <h2>Laguna, Philippines</h2>
                   </div>
@@ -80,9 +79,9 @@ const About = () => {
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis.”
                 </p>
-                <div className="name_wrap">
-                  <img src={person} className="img_person" alt="" />
-                  <div className="name">
+                <div className='name_wrap'>
+                  <img src={person} className='img_person' alt='' />
+                  <div className='name'>
                     <h1>Lei Britz1</h1>
                     <h2>Laguna, Philippines</h2>
                   </div>
@@ -93,9 +92,9 @@ const About = () => {
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis.”
                 </p>
-                <div className="name_wrap">
-                  <img src={person} className="img_person" alt="" />
-                  <div className="name">
+                <div className='name_wrap'>
+                  <img src={person} className='img_person' alt='' />
+                  <div className='name'>
                     <h1>Lei Britz1</h1>
                     <h2>Laguna, Philippines</h2>
                   </div>

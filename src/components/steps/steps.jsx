@@ -18,16 +18,16 @@ const Steps = () => {
     return (
       <StepsWrapper>
         <Row>
-          <Description>Easy and Fast</Description>
+          <Description>Oson va Tez</Description>
           <CardWrapper>
-            <CardLeft data-aos="fade-up-right">
-              <Title>Book your next trip in 3 easy steps</Title>
+            <CardLeft data-aos='fade-up-right'>
+              <Title>Keyingi sayohatingizni bron qiling 3 oson qadamda</Title>
               <Card>
                 <CardBody>
-                  <img src={img1} alt="img nout found" />
+                  <img src={img1} alt='img nout found' />
                 </CardBody>
                 <CardFooter>
-                  <h1>Choose Destination</h1>
+                  <h1>Havo yo’li orqali</h1>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Urna, tortor tempus.{" "}
@@ -36,10 +36,10 @@ const Steps = () => {
               </Card>
               <Card>
                 <CardBody>
-                  <img src={img2} alt="img nout found" />
+                  <img src={img2} alt='img nout found' />
                 </CardBody>
                 <CardFooter>
-                  <h1>Make Payment</h1>
+                  <h1>Dengiz yo’li orqali</h1>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Urna, tortor tempus.{" "}
@@ -48,10 +48,10 @@ const Steps = () => {
               </Card>
               <Card>
                 <CardBody>
-                  <img src={img3} alt="img nout found" />
+                  <img src={img3} alt='img nout found' />
                 </CardBody>
                 <CardFooter>
-                  <h1>Reach Airport on Selected Date</h1>
+                  <h1>Quruqlik yo’li orqali</h1>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Urna, tortor tempus.{" "}
@@ -59,13 +59,13 @@ const Steps = () => {
                 </CardFooter>
               </Card>
             </CardLeft>
-            <CardRight data-aos="fade-up-left">
-              <img src={left} alt="img nout found" />
+            <CardRight data-aos='fade-up-left'>
+              <img src={left} alt='img nout found' />
             </CardRight>
           </CardWrapper>
         </Row>
       </StepsWrapper>
     );
 }
- 
+
 export default Steps;

@@ -14,7 +14,7 @@ const Footer = () => {
           <CardWrapper>
             <Card>
               <CardLogo>
-                <img src={logo} alt="img nout found" />
+                <img src={logo} alt='img nout found' />
                 <p>
                   Book your trip in minute, get full Control for much longer.
                 </p>
@@ -59,16 +59,16 @@ const Footer = () => {
                 </SocialNetwork>
                 <p>Discover our app</p>
                 <Application>
-                  <img src={google} alt="img nout found" />
-                  <img src={apple} alt="img nout found" />
+                  <img src={google} alt='img nout found' />
+                  <img src={apple} alt='img nout found' />
                 </Application>
               </CardSocial>
             </Card>
           </CardWrapper>
-          <h1>All rights reserved.Lance Design</h1>
+          <h1>Dizayner Raimov Xushnudbek 2023-yil</h1>
         </Row>
       </FooterWrapper>
     );
 }
- 
+
 export default Footer;

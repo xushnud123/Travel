@@ -34,53 +34,53 @@ const ServicesCard = () => {
     <Wrapper>
       <TitleWrapper>
         <Description>CATEGORY</Description>
-        <Title>We Offer Best Services</Title>
-        <div className="plus">
-          <img src={plus} alt="img not found" />
+        <Title>Biz eng yaxshi xizmatlarni taklif qilamiz</Title>
+        <div className='plus'>
+          <img src={plus} alt='img not found' />
         </div>
       </TitleWrapper>
-      <Row className="carousel">
+      <Row className='carousel'>
         <CardWrapper>
-          <Card data-aos="zoom-out">
+          <Card data-aos='zoom-out'>
             <CardBody>
-              <img src={antena} className="img1" alt="img not found" />
+              <img src={antena} className='img1' alt='img not found' />
             </CardBody>
             <CardFooter>
-              <h1>Calculated Weather</h1>
+              <h1>Hisoblangan Ob-havo</h1>
               <p>
                 Built Wicket longer admire do barton vanity itself do in it.
               </p>
             </CardFooter>
           </Card>
-          <Card data-aos="zoom-out">
+          <Card data-aos='zoom-out'>
             <CardBody>
-              <img src={plane} className="img1" alt="img not found" />
+              <img src={plane} className='img1' alt='img not found' />
             </CardBody>
             <CardFooter>
-              <h1>Calculated Weather</h1>
+              <h1>Eng yaxshi parvozlar</h1>
               <p>
                 Built Wicket longer admire do barton vanity itself do in it.
               </p>
             </CardFooter>
-            <img src={images} className="img_2" alt="img not found" />
+            <img src={images} className='img_2' alt='img not found' />
           </Card>
-          <Card data-aos="zoom-out">
+          <Card data-aos='zoom-out'>
             <CardBody>
-              <img src={mikrofon} className="img1" alt="img not found" />
+              <img src={mikrofon} className='img1' alt='img not found' />
             </CardBody>
             <CardFooter>
-              <h1>Calculated Weather</h1>
+              <h1>Mahalliy Voqealar</h1>
               <p>
                 Built Wicket longer admire do barton vanity itself do in it.
               </p>
             </CardFooter>
           </Card>
-          <Card data-aos="zoom-out">
+          <Card data-aos='zoom-out'>
             <CardBody>
-              <img src={settings} className="img1" alt="img not found" />
+              <img src={settings} className='img1' alt='img not found' />
             </CardBody>
             <CardFooter>
-              <h1>Calculated Weather</h1>
+              <h1>Moslashtirish</h1>
               <p>
                 Built Wicket longer admire do barton vanity itself do in it.
               </p>

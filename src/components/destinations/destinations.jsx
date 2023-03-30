@@ -65,15 +65,15 @@ const Destinations = () => {
   return (
     <Destina>
       <TitleWrapper>
-        <Description>Top Selling</Description>
-        <Title>Top Destinations</Title>
+        <Description>ENG KO’P SOTILGAN</Description>
+        <Title>Eng yaxshi manzillar</Title>
       </TitleWrapper>
       <Row>
         <Cards {...settings}>
           <div>
-            <Card data-aos="fade-right">
+            <Card data-aos='fade-right'>
               <CardBody>
-                <img src={Madina} alt="img not found" />
+                <img src={Madina} alt='img not found' />
               </CardBody>
               <CardFooter>
                 <NameWrapper>
@@ -81,16 +81,16 @@ const Destinations = () => {
                   <p>1.2$</p>
                 </NameWrapper>
                 <Location>
-                  <img src={vector} alt="img not found" />
-                  <p>10 Days Trip</p>
+                  <img src={vector} alt='img not found' />
+                  <p>10 kunlik sayohat</p>
                 </Location>
               </CardFooter>
             </Card>
           </div>
           <div>
-            <Card data-aos="fade-down">
+            <Card data-aos='fade-down'>
               <CardBody>
-                <img src={Madina} alt="img not found" />
+                <img src={Madina} alt='img not found' />
               </CardBody>
               <CardFooter>
                 <NameWrapper>
@@ -98,16 +98,16 @@ const Destinations = () => {
                   <p>1.2$</p>
                 </NameWrapper>
                 <Location>
-                  <img src={vector} alt="img not found" />
-                  <p>10 Days Trip</p>
+                  <img src={vector} alt='img not found' />
+                  <p>10 kunlik sayohat</p>
                 </Location>
               </CardFooter>
             </Card>
           </div>
           <div>
-            <Card data-aos="fade-left">
+            <Card data-aos='fade-left'>
               <CardBody>
-                <img src={Madina} alt="img not found" />
+                <img src={Madina} alt='img not found' />
               </CardBody>
               <CardFooter>
                 <NameWrapper>
@@ -115,11 +115,11 @@ const Destinations = () => {
                   <p>1.2$</p>
                 </NameWrapper>
                 <Location>
-                  <img src={vector} alt="img not found" />
-                  <p>10 Days Trip</p>
+                  <img src={vector} alt='img not found' />
+                  <p>10 kunlik sayohat</p>
                 </Location>
               </CardFooter>
-              <img src={decore} className="decore" alt="img nout found" />
+              <img src={decore} className='decore' alt='img nout found' />
             </Card>
           </div>
         </Cards>

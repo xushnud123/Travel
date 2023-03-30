@@ -44,39 +44,39 @@ const Comp = () => {
        ],
      };
   return (
-    <CompWrapper data-aos="zoom-in-down">
+    <CompWrapper data-aos='zoom-in-down'>
       <Row>
-        <Title>Trusted by companies</Title>
+        <Title>Kompaniyalar tomonidan ishonchli</Title>
         <CardWrapper>
           <ReactSlick {...settings}>
             <div>
               <Card>
-                <img src={asia} className="asia" alt="img nout found" />
+                <img src={asia} className='asia' alt='img nout found' />
               </Card>
             </div>
             <div>
               <Card>
-                <img src={cebu} alt="img nout found" />
+                <img src={cebu} alt='img nout found' />
               </Card>
             </div>
             <div>
               <Card>
-                <img src={philip} alt="img nout found" />
+                <img src={philip} alt='img nout found' />
               </Card>
             </div>
             <div>
               <Card>
-                <img src={asia} className="asia" alt="img nout found" />
+                <img src={asia} className='asia' alt='img nout found' />
               </Card>
             </div>
             <div>
               <Card>
-                <img src={cebu} alt="img nout found" />
+                <img src={cebu} alt='img nout found' />
               </Card>
             </div>
             <div>
               <Card>
-                <img src={philip} alt="img nout found" />
+                <img src={philip} alt='img nout found' />
               </Card>
             </div>
           </ReactSlick>

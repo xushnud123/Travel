@@ -18,7 +18,7 @@ import {
 import plane from '../../../assets/img/hero/plane.svg'
 import next from '../../../assets/img/icon/icon.svg'
 
- 
+
 const HeroCard = () => {
     const [open,setOpen] = useState(false)
 
@@ -67,33 +67,33 @@ const HeroCard = () => {
           delay: 100,
         });
       });
-  
+
 
   return (
     <Wrapper>
-      <Row data-aos="fade-right">
+      <Row data-aos='fade-right'>
         <HeroTitle>
           <Landscape>
-            <p>Mountains</p>
+            <p>Tog’lar</p>
             <span></span>
-            <p>Plains</p>
+            <p>Rejalar</p>
             <span></span>
-            <p>Beaches</p>
+            <p>Sohillar</p>
           </Landscape>
           <Vacation>
-            <Title>Spend your vacation with our activites</Title>
+            <Title>Ta'tilingizni biz bilan birga o’tkazing</Title>
             <img
               src={plane}
               className={open ? "plane active" : "plane"}
-              alt="img nout found"
+              alt='img nout found'
             />
           </Vacation>
         </HeroTitle>
         <div>
           <Description>
-            <h1>Most Popular </h1>
-            <Next className="next" onClick={() => gotoNext()}>
-              <img src={next} alt="img nout found" />
+            <h1>eng mashxur</h1>
+            <Next className='next' onClick={() => gotoNext()}>
+              <img src={next} alt='img nout found' />
             </Next>
           </Description>
         </div>

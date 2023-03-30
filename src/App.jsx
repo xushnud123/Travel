@@ -20,7 +20,7 @@ function App() {
       <Steps/>
       <About/>
       <Comp/>
-      <Subscribe/>
+      {/* <Subscribe/> */}
       <Footer/>
     </AppWrapper>
   );
